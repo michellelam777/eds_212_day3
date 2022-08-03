@@ -72,3 +72,4 @@ glimpse(penguins)
 
 In Terminal tab type in pwd print working directory to see where you are
 git status will show you what's been changed
+Terminal communicates with computer, console communicates with R
