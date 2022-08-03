@@ -1,0 +1,56 @@
+---
+title: "Creating and Working with Vectors"
+author: "Michelle Lam"
+date: "2022-08-03"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+library(tidyverse)
+library(palmerpenguins)
+```
+
+To back your R project on Github and create version control, create your project, in the console run the command usethis::use_git() to create your local repo, to set up the remote repo run the command usethis::use_github() in the console.
+
+To pull a repo from Github into your local environment, Fork the repo in Github and then click the Clone button (copy the URL), create a project in R and select version control, select Git, paste in the copied URL and create your project
+
+### Make Some Vectors
+
+```{r}
+# You can normally use double or single quotes interchangeably
+# Can't have varying classes in a single vector
+marmots <- c("blue", "green", 4, "yellow")
+
+# Check class
+class(marmots)
+```
+
+
+```{r}
+pika <- c(12.4, 6.8, 2.9, 8.8, 8.5)
+class(pika)
+
+# Scalar multiplier
+
+scalar_pika <- 5.2 * pika
+
+# To show data in knit call the value in the code
+scalar_pika
+```
+
+```{r}
+bananas <- c(1,2,3)
+apples <- c(6,7,8)
+
+# Adding and subtracting vectors
+bananas + apples
+bananas - apples
+
+# calculate the dot product in R
+bananas %*% apples
+```
+
